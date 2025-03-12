@@ -82,12 +82,12 @@ print(q3)
 ```
 rid=ir[((ir.sepal_width<(q1-1.5*iq))|(ir.sepal_width>(q3+1.5*iq)))]
 rid['sepal_width']
-
+```
 ![Screenshot 2025-03-04 211414](https://github.com/user-attachments/assets/0cd26dc2-8d9d-4133-ab65-1266ffef2720)
 ```
 delid=ir[~((ir.sepal_width<(q1-1.5*iq))|(ir.sepal_width>(q3+1.5*iq)))]
 delid
-
+```
 ![Screenshot 2025-03-04 211553](https://github.com/user-attachments/assets/bfad9299-0cf2-421d-9ad7-86a4490a83ad)
 ```
 sns.boxplot(x='sepal_width',data=delid)
@@ -102,7 +102,7 @@ import scipy.stats as stats
 
 dataset=pd.read_csv("heights.csv")
 dataset
-
+```
 ![Screenshot 2025-03-04 211730](https://github.com/user-attachments/assets/ca58957c-4608-4f6d-917b-80d8edd4c297)
 ```
 df = pd.read_csv("heights.csv")
